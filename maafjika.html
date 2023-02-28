@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8" /><meta
+    content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5"
+    name="viewport"
+  /><meta content="IE=edge" http-equiv="X-UA-Compatible" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    rel="stylesheet"
+  />
+
+  <script src="js/sweetalert2.all.min.js"></script>
+  <script src="js/index.umd.js"></script>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="js/fontawesome.js" crossorigin="anonymous"></script>
+
+  <head>
+    <title>Script HTML buat Kamu</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <meta name="description" content="HTML Bucin" />
+    <!-- 
+  Made with love by Rayys!
+  
+     Blog: www.feeldream.id
+     Instagram: @rayyarrr
+     TikTok: @rayy4r
+     Email: rayyarr73@gmail.com
+     
+  Thanks to all <3
+-->
+  </head>
+  <style>
+    :root {
+      --ukuran-teks: 14px;
+      --gaya-font: "Poppins", sans-serif;
+    }
+  </style>
+  <body>
+    <!-- Ganti Audio di sini -->
+    <audio src="audio/maafjika.mp3" id="linkmp3" class="sembunyi"></audio>
+
+    <div id="bodyblur"><img src="" id="wallpaper" /></div>
+
+    <div id="Content">
+      <div id="ftAwal">
+        <!-- Stiker Pembuka -->
+        <img src="img/heart.png" id="ftoAwal" />
+      </div>
+
+      <div id="loveIn">
+        <!-- Tombol LOVE --><label
+          class="lovein"
+          style="background-color: transparent"
+          >🥰</label
+        >
+      </div>
+      <p id="ket">Sentuh EMOTEnya!</p>
+
+      <div class="kumpulan">
+        <!-- Kumpulan Background -->
+        <img src="img/8.jpg" id="wallpaper1" />
+        <img src="img/7.jpg" id="wallpaper2" />
+        <img src="img/6.jpg" id="wallpaper3" />
+        <img src="img/5.jpg" id="wallpaper4" />
+        <img src="img/4.jpg" id="wallpaper5" />
+        <img src="img/3.jpg" id="wallpaper6" />
+        <img src="img/2.jpg" id="wallpaper7" />
+        <img src="img/1.jpg" id="wallpaper8" />
+
+        <!-- Foto/Stiker Akhir -->
+        <img src="img/heart.png" id="ftoAkhir" />
+      </div>
+
+      <div>
+        <blockquote id="bq">
+          <p id="kalimat" style="text-align: center"></p>
+        </blockquote>
+      </div>
+
+      <!-- Tombol Kirim Pesan -->
+      <div id="Tombol">
+        <a id="By">&#128140; Balas</a>
+      </div>
+    </div>
+
+    <!-- Jangan Edit Bagian Ini -->
+    <script>
+      const body = document.querySelector("body");
+      const swalst = Swal.mixin({
+        timer: 2500,
+        allowOutsideClick: false,
+        showConfirmButton: false,
+        timerProgressBar: true,
+        imageHeight: 90,
+      });
+      audio = new Audio("" + linkmp3.src);
+      ftganti = 0;
+      fungsi = 0;
+      fungsiAwal = 0;
+      function berjatuhan() {
+        const heart = document.createElement("div");
+        heart.className = "fas fa-heart";
+        heart.style.left = Math.random() * 90 + "vw";
+        heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+        body.appendChild(heart);
+      }
+      setInterval(function name(params) {
+        var heartArr = document.querySelectorAll(".fa-heart");
+        if (heartArr.length > 100) {
+          heartArr[0].remove();
+        }
+      }, 100);
+      Content.style = "opacity:1;margin-top:14vh";
+      const swals = Swal.mixin({
+        allowOutsideClick: false,
+        cancelButtonColor: "#FF0040",
+        imageHeight: 80,
+      });
+      const inip = [];
+      const iniwp = [];
+      iden = 1;
+
+      iniwp[1] = wallpaper1.src;
+      wallpaper.src = iniwp[1];
+      iniwp[2] = wallpaper2.src;
+      iniwp[3] = wallpaper3.src;
+      iniwp[4] = wallpaper4.src;
+      iniwp[5] = wallpaper5.src;
+      iniwp[6] = wallpaper6.src;
+      iniwp[7] = wallpaper7.src;
+      iniwp[8] = wallpaper8.src;
+
+      inip[1] = "hai,";
+      inip[2] = "aku cuma mau bilang";
+      inip[3] = "maaf, jika aku<br>selalu mencurigaimu";
+      inip[4] = "maaf juga jika<br>aku sering cemburu";
+      inip[5] = "tapi,";
+      inip[6] = "asal kamu tau";
+      inip[7] = "semua itu,";
+      inip[8] = "karena aku<br>takut kehilanganmu ツ";
+
+      totalPesan = 8; //Input total pesan (slide) di sini ya!
+
+      function waktumuncul() {
+        setTimeout(kalimatakhir, 9900);
+        setTimeout(kalimatakhir, 10700);
+        setTimeout(kalimatakhir, 12700);
+        setTimeout(kalimatakhir, 15700);
+        setTimeout(kalimatakhir, 18600);
+        setTimeout(kalimatakhir, 19400);
+        setTimeout(kalimatakhir, 21000);
+        setTimeout(kalimatakhir, 22100);
+      }
+    </script>
+    <script src="js/bolehkah.js"></script>
+    <!-- Sampai Sini -->
+  </body>
+</html>
